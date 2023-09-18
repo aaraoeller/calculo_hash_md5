@@ -1,5 +1,5 @@
 <?php
-// Verifique se um arquivo foi enviado
+// Verificando se um arquivo foi enviado
 if (isset($_FILES["arquivo"])) {
     $arquivo_nome = $_FILES["arquivo"]["name"];
     $arquivo_tmp = $_FILES["arquivo"]["tmp_name"];
