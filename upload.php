@@ -12,7 +12,7 @@ if (isset($_FILES["arquivo"])) {
     $md5_hash = md5_file($destino);
 
     // Conectando ao banco de dados MySQL
-    $conn = new mysqli("localhost", "root", "", "assinaturas_md5");
+    $conn = new mysqli("servidor", "usuario", "senha", "nome_do_banco");
 
     // Inserindo os dados na tabela
     $sql = "INSERT INTO assinaturas (arquivo_nome, md5_hash) VALUES ('$arquivo_nome', '$md5_hash')";
